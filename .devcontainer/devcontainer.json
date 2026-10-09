@@ -1,0 +1,21 @@
+{
+  "name": "Robot Framework 7.2.2",
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "robocorp.robotframework-lsp",
+        "ms-python.python",
+        "GitHub.copilot"
+      ]
+    }
+  },
+
+  "postCreateCommand": "python --version && robot --version",
+
+  "remoteUser": "vscode"
+}
